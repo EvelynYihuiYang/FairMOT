@@ -4,12 +4,12 @@ import numpy as np
 
 
 def mkdirs(d):
-    if not osp.exists(d):
+    if not osp.exists(d):https://github.com/EvelynYihuiYang/FairMOT/blob/master/src/gen_labels_20.py
         os.makedirs(d)
 
 
-seq_root = '/data/yfzhang/MOT/JDE/MOT20/images/train'
-label_root = '/data/yfzhang/MOT/JDE/MOT20/labels_with_ids/train'
+seq_root = '/content/FairMOT/src/data/MOT20/images/train'
+label_root = '/content/FairMOT/src/data/MOT20/labels_with_id/train'
 mkdirs(label_root)
 seqs = [s for s in os.listdir(seq_root)]
 
